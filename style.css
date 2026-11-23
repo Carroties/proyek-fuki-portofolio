@@ -10,15 +10,28 @@ body {
             border: none;
             font-weight: bold;
     }
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+    overflow-wrap: anywhere;
 }
 
 .navbar,
-.profile {
+.profile,
+.experience,
+.project {
     background: yellow;
     Margin: 10px;
     border: 2px black solid;
     display: flex;
+    padding-left: 16px;
     gap: 64px;
     
 }
@@ -76,9 +89,11 @@ body {
 
         }
 
-            .profile-description-paragraph-social {
+            .profile-description-paragraph-social,
+            .profile-description-paragraph-cv {
                 background: white;
                 display: inline-flex;
+                align-content: row;
                 gap: 10px;
                 padding: 5px;
                 border: 2px black solid;
@@ -87,8 +102,8 @@ body {
                     display: block;
                     width: 24px;
                     height: 24px;
+                }
             }
-        }
     }
 }
 
