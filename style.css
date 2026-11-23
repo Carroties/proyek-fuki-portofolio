@@ -19,7 +19,15 @@ body {
     Margin: 10px;
     border: 2px black solid;
     display: flex;
-    gap : 64px;
+    gap: 64px;
+    
+}
+
+.tech_stack {
+    background: yellow;
+    Margin: 10px;
+    border: 2px black solid;
+    display: flex;
 }
 
 .navbar {
@@ -47,7 +55,6 @@ body {
     margin-left: 5px;
 
         img {
-        border-radius: 6px;
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -67,6 +74,59 @@ body {
 
         .profile-description-paragraph {
 
+        }
+
+            .profile-description-paragraph-social {
+                background: white;
+                display: inline-flex;
+                gap: 10px;
+                padding: 5px;
+                border: 2px black solid;
+
+                img {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+            }
+        }
+    }
+}
+
+.tech_stack {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-bottom: 10px;
+
+    .tech_stack-title {
+        h2 {
+            margin: 5px;
+        }
+    }
+
+    .tech_stack-logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+
+
+        .tech_stack-logo-frontend,
+        .tech_stack-logo-backend,
+        .tech_stack-logo-tools {
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px;
+            background: white;
+            border: 2px solid black;
+        }
+
+            img {
+                width: 32px;
+                height: 32px;
+                object-fit: contain;
         }
     }
 }
