@@ -1,14 +1,15 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Portofolio Ashraf</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Ashraf</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <!-- <link rel="stylesheet" href="style2.css" /> -->
+  </head>
 
-    <body>
-
+  <body>
         <nav>
             <div class="navbar">
                 <div class="navbar-name">
@@ -41,6 +42,7 @@
             </div>
         </nav>
 
+    <main>
         <div class="profile" id="profile">
             <div class="profile-photo">
                 <img src="photos/ashraf-photo.jpg" height="200" alt="Ashraf's Photo">
@@ -89,72 +91,59 @@
             </div>
         </div>
 
-        <div class="tech_stack" id="tech_stack">
-            <div class="tech_stack-title">
-                <h2>Tech Stacks</h2>
-            </div>
-
-            <div class="tech_stack-logo">
-
-                <div class="tech_stack-logo-frontend">
-                    <p>
-                        Frontend
-                    </p>
-                    <img src="photos/html5-logo.webp" alt="HTML5 Logo">
-                    <img src="photos/css3-logo.png" alt="CSS3 Logo">
-                    <img src="photos/javascript-logo.webp" alt="Javascript Logo">
-                </div>
-
-                <div class="tech_stack-logo-backend">
-                    <p>
-                        Backend
-                    </p>
-                    <img src="photos/django-logo.webp" alt="Django Logo">
-                </div>
-
-                <div class="tech_stack-logo-tools">
-                    <p>
-                        Supporting Tools
-                    </p>
-                    <img src="photos/git-logo.webp" alt="Git Logo">
-                    <img src="photos/vscode-logo.webp" alt="VS Code Logo">
-                </div>
-            </div>
-
+      <section class="tech_stack">
+        <div class="tech_stack-title">
+          <h2>Tech Stacks</h2>
         </div>
 
-        <div class="experience" id="experiences">
-            <h2>
-                Experiences
-            </h2>
+        <div class="tech_stack-logo">
+          <div class="tech_stack-logo-frontend">
+            <p>Frontend</p>
+            <img src="photos/html5-logo.webp" alt="HTML5 Logo" />
+            <img src="photos/css3-logo.png" alt="CSS3 Logo" />
+            <img src="photos/javascript-logo.webp" alt="Javascript Logo" />
+          </div>
+
+          <div class="tech_stack-logo-backend">
+            <p>Backend</p>
+            <img src="photos/django-logo.webp" alt="Django Logo" />
+          </div>
+
+          <div class="tech_stack-logo-tools">
+            <p>Supporting Tools</p>
+            <img src="photos/git-logo.webp" alt="Git Logo" />
+            <img src="photos/vscode-logo.webp" alt="VS Code Logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="experience">
+        <h2>Experiences</h2>
+      </section>
+
+      <section class="project">
+        <div class="project-title">
+          <h2>Projects</h2>
         </div>
 
-        <div class="project" id="projects">
-            <div class="project-title">
-                <h2>
-                    Projects
-                </h2>
-            </div>
+        <div class="project-content">
+          <div class="project-content-description">
+            <h3>Sabrang Mart Website</h3>
+          </div>
 
-            <div class="project-content">
-                <div class="project-content-description">
-                    <h3>Sabrang Mart Website</h3>
-                </div>
-                
-                <div class="project-content-image">
-                    <img src="photos/sabrangmart-website.png" alt="Sabrang Mart Website Main Page">
-                </div>
-            </div>
+          <div class="project-content-image">
+            <img
+              src="photos/sabrangmart-website.png"
+              alt="Sabrang Mart Website Main Page"
+            />
+          </div>
         </div>
+      </section>
 
-        <div class="education" id="education">
-            <h2>
-                Education
-            </h2>
-        </div>
-    </body>
-
-    <footer>
-
-    </footer>
+      <section class="education" id="education">
+        <h2>Education</h2>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

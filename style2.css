@@ -1,0 +1,83 @@
+:root {
+  --fg: #333;
+  --a: color-mix(in oklab, blue, white 25%);
+}
+
+body {
+  background-color: #e9e9ef;
+  color: var(--fg);
+  font-family: sans-serif;
+}
+
+a {
+  color: var(--a);
+  text-decoration-color: transparent;
+  transition: color 150ms ease-out;
+}
+
+nav {
+  position: sticky;
+  top: .5rem;
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  gap: 1rem;
+  justify-content: center;
+  max-width: fit-content;
+  margin-inline: auto;
+  border-radius: 8px;
+
+  background-color: aliceblue;
+}
+
+.navbar-item {
+  a {
+    color: var(--fg);
+    font-weight: bold;
+
+    &:hover {
+      color: var(--a);
+    }
+  }
+}
+
+main {
+  margin-block-start: 25vh;
+}
+
+.icon {
+  max-width: 40px;
+}
+
+.flex {
+  display: flex;
+}
+
+.socials {
+  margin-block-start: .5rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  max-width: 90vw;
+  margin-inline: auto;
+  gap: 5rem;
+}
+
+.profile-photo {
+  min-width: 20rem;
+  width: 50vw;
+}
+
+.profile-photo-img {
+  aspect-ratio: 3 / 4;
+  margin-inline: auto 0;
+}
+
+.profile-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -1,189 +1,181 @@
 body {
-    background: lightgreen;
-
-    * {
-        box-sizing: border-box;
-    }
-
-    button {
-            background: none;
-            border: none;
-            font-weight: bold;
-    }
+  background: lightgreen;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
 button {
-    overflow-wrap: anywhere;
-}
+    background: none;
+    border: none;
+    font-weight: bold;
+  }
 
 .navbar,
 .profile {
-    background: yellow;
-    Margin: 10px;
-    border: 2px black solid;
-    display: flex;
-    padding-left: 16px;
-    gap: 64px;
+  background: yellow;
+  margin: 10px;
+  border: 2px black solid;
+  display: flex;
+  padding-left: 16px;
 }
 
 .navbar {
-    padding: 5px;
+  padding: 5px;
+  gap: 2vw;
 
-    .navbar-name {
-        margin-left: 10px;
-    }
+  .navbar-name {
+    margin-left: 10px;
+  }
 
-    .navbar-buttons {
-        margin-left: auto;
-        align-content: center;
-        gap: 10px;
-    }
+  .navbar-buttons {
+    margin-left: auto;
+    align-content: center;
+    gap: 10px;
+  }
 }
 
 .profile {
-    padding: 10px;
+  padding: 10px;
+  gap: 2rem;
 
-    .profile-photo {
+
+  .profile-photo {
     height: 200px;
     width: 150px;
     overflow: hidden;
     border: 2px black solid;
     margin-left: 5px;
 
-        img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transform: scale(2);
-        }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transform: scale(2);
     }
-    .profile-description {
-
-        .profile-description-title {
-            h1 {
-                margin: 0 0 0px;
-            }
-            h5 {
-                margin: 0 0 10px;
-            }
-         }
-
-        .profile-description-paragraph {
-
-        }
-
-            .profile-description-paragraph-social,
-            .profile-description-paragraph-cv {
-                background: white;
-                display: flex;
-                align-content: row;
-                align-items: center;
-                gap: 10px;
-                padding: 5px;
-                border: 2px black solid;
-                height: 36px;
-
-                img {
-                    display: block;
-                    width: 24px;
-                }
-            }
-
-
+  }
+  .profile-description {
+    .profile-description-title {
+      h1 {
+        margin: 0 0 0px;
+      }
+      h5 {
+        margin: 0 0 10px;
+      }
     }
+
+    .profile-description-paragraph {
+    }
+
+    .profile-description-paragraph-social,
+    .profile-description-paragraph-cv {
+      background: white;
+      display: flex;
+      align-content: row;
+      align-items: center;
+      gap: 10px;
+      padding: 5px;
+      border: 2px black solid;
+      height: 36px;
+
+      img {
+        display: block;
+        width: 24px;
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  .profile {
+    flex-direction: column;
+
+    .profile-photo {
+      margin: 0 auto;
+    }
+  }  
 }
 
 .tech_stack {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-bottom: 10px;
+  background: yellow;
+  margin: 10px;
+  border: 2px black solid;
+
+  .tech_stack-title {
+    h2 {
+      margin: 5px;
+    }
+  }
+
+  .tech_stack-logo {
     display: flex;
-    flex-direction: column;
-    padding-left: 16px;
-    padding-bottom: 10px;
-    background: yellow;
-    Margin: 10px;
-    border: 2px black solid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
 
-    .tech_stack-title {
-        h2 {
-            margin: 5px;
-        }
+    .tech_stack-logo-frontend,
+    .tech_stack-logo-backend,
+    .tech_stack-logo-tools {
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 5px;
+      background: white;
+      border: 2px solid black;
     }
 
-    .tech_stack-logo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 24px;
-
-
-        .tech_stack-logo-frontend,
-        .tech_stack-logo-backend,
-        .tech_stack-logo-tools {
-            font-weight: bold;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 5px;
-            background: white;
-            border: 2px solid black;
-        }
-
-            img {
-                width: 32px;
-                height: 32px;
-                object-fit: contain;
-        }
+    img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
     }
+  }
 }
 
 .experience {
-    background: yellow;
-    Margin: 10px;
-    border: 2px black solid;
-    display: flex;
-    padding-left: 16px;
+  background: yellow;
+  margin: 10px;
+  border: 2px black solid;
+  display: flex;
+  padding-left: 16px;
 }
 
 .project {
-    display: flex;
-    flex-direction: column;
-    padding-left: 16px;
-    padding-bottom: 10px;
-    background: yellow;
-    Margin: 10px;
-    border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-bottom: 10px;
+  background: yellow;
+  margin: 10px;
+  border: 2px black solid;
 
-    .project-title {
+  .project-title {
+  }
 
+  .project-content {
+    img {
+      width: 400px;
+      padding-right: 16px;
     }
-
-    .project-content {
-        img {
-            width: 400px;
-
-        }
-    }
+  }
 }
 
-.flex{
-    display: flex;
-    gap: 10px;
-    align-items: center;    
+.flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 #cv a,
 .profile-description-paragraph a {
-    text-decoration: none;
-    color: black;
-
+  text-decoration: none;
+  color: black;
 }
 
-#cv a:hover{
-    color: lightgreen;
+#cv a:hover {
+  color: lightgreen;
 }
+
+
