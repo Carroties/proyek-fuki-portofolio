@@ -9,7 +9,8 @@ button {
   }
 
 .navbar,
-.profile {
+.profile,
+.education {
   background: yellow;
   margin: 10px;
   border: 2px black solid;
@@ -35,6 +36,7 @@ button {
 .profile {
   padding: 10px;
   gap: 2rem;
+
 
 
   .profile-photo {
@@ -71,9 +73,10 @@ button {
       align-content: row;
       align-items: center;
       gap: 10px;
-      padding: 5px;
+      padding: 10px;
       border: 2px black solid;
       height: 36px;
+      margin: 10px 0px;
 
       img {
         display: block;
@@ -81,16 +84,6 @@ button {
       }
     }
   }
-}
-
-@media (width < 768px) {
-  .profile {
-    flex-direction: column;
-
-    .profile-photo {
-      margin: 0 auto;
-    }
-  }  
 }
 
 .tech_stack {
@@ -110,7 +103,7 @@ button {
 
   .tech_stack-logo {
     display: flex;
-    flex-direction: row;
+    flex-direction: inline-flex;
     flex-wrap: wrap;
     gap: 24px;
 
@@ -178,4 +171,35 @@ button {
   color: lightgreen;
 }
 
+@media (width < 480px) {
+  .profile {
+    flex-direction: column;
+      flex-wrap: wrap;
 
+
+    .profile-photo {
+      margin: 0 auto;
+    }
+
+    .profile-description {
+      margin: 0px 16px;
+
+      p {
+        padding: 4px 0px;
+      }
+
+      .flex {
+        padding: 4px 0px;
+      }
+    }
+
+    
+
+    .tech_stack {
+      .tech_stack-logo {
+        flex-direction: column;
+        max-width: fit-content;
+      }
+    }
+  }  
+}
